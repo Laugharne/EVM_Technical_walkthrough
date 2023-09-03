@@ -195,9 +195,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 ## Gas Strip Funds
 
 - There was an idea called "gas strip funds" where users would receive some of their spent gas back if they reduced state in some way.
-- However, this idea was not widely adopted or implemented due to complexity and usability concerns.
+- However, this idea was not widely adopted or implemented due to complexity and usability concerns. [17:41](https://youtu.be/Nh19f_2fWLc?t=1061)
 
-[t=1061s]
 # [26:04](https://youtu.be/Nh19f_2fWLc?t=1564)
 
 **Section Overview:** The speaker discusses the need to support new types and the section type inside Ethereum.
