@@ -37,7 +37,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 - The speaker wrote RAM **Rust** **EVM** a few years ago because existing **EVM** libraries were difficult to use.
 - They didn't expect it to be used so much within a year or two.
-- Before working on RAM **Rust** **EVM**, they were building a Rast Ethereum client.
+- Before working on RAM **Rust** **EVM**, they were building a **Rust Ethereum client**.
 
 # [01:18](https://youtu.be/Nh19f_2fWLc?t=78) Connecting Abstract Ideas to Code
 
