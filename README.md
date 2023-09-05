@@ -228,21 +228,21 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 - However, this idea was not widely adopted or implemented due to complexity and usability concerns. [17:41](https://youtu.be/Nh19f_2fWLc?t=1061)
 
 
-![](14-Traces.png)
+[00:19:41](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1181s) ![](14-Traces.png)
 
-![](15-Inspector.png)
+[00:20:08](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1208s) ![](15-Inspector.png)
 
-![](17-Host.png)
+[00:20:56](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1256s) ![](17-Host.png)
 
 ![](18-Host-contains.png)
 
-![](19-Subroutine-State-and-reverts.png)
+[00:22:30](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1350s) ![](19-Subroutine-State-and-reverts.png)
 
-![](20-Host-Trait-1.png)
+[00:23:30](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1410s) ![](20-Host-Trait-1.png)
 
-![](21-Precompile.png)
+[00:24:20](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1460s) ![](21-Precompile.png)
 
-![](22-Hard-Forks.png)
+[00:25:00](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1500s) ![](22-Hard-Forks.png)
 
 
 # [26:04](https://youtu.be/Nh19f_2fWLc?t=1564)
@@ -288,7 +288,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 - Gas calculation is done using u64 because the limit is around 30 million, which fits well within a u64. [27:40](https://youtu.be/Nh19f_2fWLc?t=1660)
 - Memory calculation is also done using u64. [27:40](https://youtu.be/Nh19f_2fWLc?t=1660)
 
-![](23-Optimizations.png)
+[00:27:54](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1674s) ![](23-Optimizations.png)
 
 
 # [28:23](https://youtu.be/Nh19f_2fWLc?t=1703)
