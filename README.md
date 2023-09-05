@@ -198,6 +198,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Logging Details
 
+![](12-Logs.png)
+
 - Logs contain information such as creator addresses and topics.
 - Creator addresses indicate who created a particular log entry.
 - Topics are extracted from stack values or memory during execution.
@@ -207,6 +209,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 **Section Overview:** This section discusses the gas price mechanism used in Ethereum Virtual Machines (**EVM**s).
 
 ## Gas Price Calculation
+
+![](13-Gas.png)
 
 - The gas price in **EVM**s is determined by multiplying the gas used by the gas price.
 - The gas price can vary depending on factors such as the original gas price and other calculations.
@@ -222,6 +226,24 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 - There was an idea called "gas strip funds" where users would receive some of their spent gas back if they reduced state in some way.
 - However, this idea was not widely adopted or implemented due to complexity and usability concerns. [17:41](https://youtu.be/Nh19f_2fWLc?t=1061)
+
+
+![](14-Traces.png)
+
+![](15-Inspector.png)
+
+![](17-Host.png)
+
+![](18-Host-contains.png)
+
+![](19-Subroutine-State-and-reverts.png)
+
+![](20-Host-Trait-1.png)
+
+![](21-Precompile.png)
+
+![](22-Hard-Forks.png)
+
 
 # [26:04](https://youtu.be/Nh19f_2fWLc?t=1564)
 
@@ -265,6 +287,9 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 - Gas calculation is done using u64 because the limit is around 30 million, which fits well within a u64. [27:40](https://youtu.be/Nh19f_2fWLc?t=1660)
 - Memory calculation is also done using u64. [27:40](https://youtu.be/Nh19f_2fWLc?t=1660)
+
+![](23-Optimizations.png)
+
 
 # [28:23](https://youtu.be/Nh19f_2fWLc?t=1703)
 
