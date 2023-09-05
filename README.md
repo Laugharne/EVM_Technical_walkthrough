@@ -1,6 +1,8 @@
 # [**EVM** Technical walkthrough with Dragan Rakita](https://youtu.be/Nh19f_2fWLc) 
 
+
 ![](2023-09-03-16-04-06.png)
+
 
 - [Dragan Rakita (@rakitadragan)](https://x.com/rakitadragan)
 - [draganrakita | draganrakita](http://rakita.github.io/blog/)
@@ -35,6 +37,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker introduces themselves as the creator of RAM **Rust** **EVM** and talks about their background in building their own **EVM** library.
 
+![](01-Transaction-and-Gas.png)
+
 - The speaker wrote RAM **Rust** **EVM** a few years ago because existing **EVM** libraries were difficult to use.
 - They didn't expect it to be used so much within a year or two.
 - Before working on RAM **Rust** **EVM**, they were building a **Rust Ethereum client**.
@@ -51,6 +55,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker discusses the inputs required by the **EVM**, including transactions, blocks, and configurations.
 
+![](02-Block.png)
+
 - The main inputs of the **EVM** are transactions, blocks, and configurations.
 - Transactions contain information such as gas limits and account addresses.
 - Blocks have additional fields like parent hash and difficulty that are needed for certain opcodes.
@@ -60,6 +66,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker explains how database interface works in fetching storage and accounts while executing bytecode in the **EVM**.
 
+![](03-Database-interface.png)
+
 - Database interface dynamically fetches storage and accounts while executing bytecode in the **EVM**.
 - When executing bytecode from an account, the **EVM** fetches the account's balance, bytecode hash, and code.
 - The simplicity of this interface makes it easy to navigate and reason about.
@@ -67,6 +75,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 # [06:20](https://youtu.be/Nh19f_2fWLc?t=380) Inside the **EVM**: Stack-based Machine
 
 **Section Overview:** The speaker discusses the stack-based machine inside the **EVM** and different types of instructions.
+
+![](04-EVM-Host-and-Interpreter.png)
 
 - The **EVM** is a stack-based machine where instructions are executed one by one.
 - There are two main types of instructions: call and create.
@@ -77,7 +87,10 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker explains the output of the **EVM**, including changes to accounts, logs, status, and gas usage.
 
+![](05-EVM-Diagram.png)
+
 - The output of the **EVM** includes changes made to accounts, logs created during execution, status indicating if it was reverted or not, and gas usage.
+
 # [08:15](https://youtu.be/Nh19f_2fWLc?t=495) Overview of the Interpreter
 
 **Section Overview:** The upper part of the interpreter is the host, while the lower part is the interpreter. The interpreter executes bytecode instructions in a loop, fetching opcodes from memory and executing them. It can also handle sub-calls to other contracts.
@@ -107,6 +120,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** This section provides a detailed explanation of how the interpreter works in terms of bytecode analysis and execution stages.
 
+![](06-Interpreter.png)
+
 ## Bytecode Analysis
 
 - Bytecode analysis involves examining each instruction in the bytecode from start to end.
@@ -130,6 +145,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** This section explains the structure of the interpreter, including its components and their functionalities.
 
+![](07-Interpreter-contains.png)
+
 ## Interpreter Components
 
 - Contract: Represents the current contract being executed.
@@ -142,15 +159,21 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Standard Instructions
 
+![](08-Interpreter-machine-in-code.png)
+
 - Memory Load/Store: Instructions for loading/storing data from/to memory.
 - Program Counter Jump/Jump Destination Store: Instructions related to program counter manipulation and jumping within bytecode instructions.
   - Jump destinations are determined during pre-compilation stage.
 
 ## Environment and Logging
 
+![](09-OpCodes.png)
+
 - Storage Load/Store Environment: Fetches storage or block information as needed by opcodes.
   - Depends on the context of execution (e.g., fetching block timestamp).
 - Logging Instructions: Used for logging purposes, including address creation and topics extraction.
+
+![](10-CREATE-And-CREATE2.png)
 
 # [16:05](https://youtu.be/Nh19f_2fWLc?t=965) Address Calculation and Multiple Calls
 
@@ -164,6 +187,8 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Multiple Calls
 
+![](11-Call-OpCodes.png)
+
 - Multiple calls can occur within the interpreter.
 - The specific details of how subsequent calls are made depend on the context and requirements of the execution.
 
@@ -176,6 +201,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 - Logs contain information such as creator addresses and topics.
 - Creator addresses indicate who created a particular log entry.
 - Topics are extracted from stack values or memory during execution.
+
 # [17:25](https://youtu.be/Nh19f_2fWLc?t=1045) Gas Price Mechanism in **EVM**S
 
 **Section Overview:** This section discusses the gas price mechanism used in Ethereum Virtual Machines (**EVM**s).
