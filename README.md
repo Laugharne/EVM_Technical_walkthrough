@@ -1,5 +1,12 @@
 # [**EVM** Technical walkthrough with Dragan Rakita](https://youtu.be/Nh19f_2fWLc) 
 
+```
+This is a transcription of a YouTube video. Among the relevant resources for learning more about EVM and gas optimisation, I found this video particularly interesting.
+
+This content presents the opinions and perspectives of industry experts or other individuals.   The opinions expressed in this content do not necessarily reflect my opinion.
+
+Readers are encouraged to verify the information on their own and seek professional advice before making any decisions based on this content.
+```
 
 ![](2023-09-03-16-04-06.png)
 
