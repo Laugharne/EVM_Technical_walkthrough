@@ -8,7 +8,7 @@ This content presents the opinions and perspectives of industry experts or other
 Readers are encouraged to verify the information on their own and seek professional advice before making any decisions based on this content.
 ```
 
-![](2023-09-03-16-04-06.png)
+![](assets/2023-09-03-16-04-06.png)
 
 
 - [Dragan Rakita (@rakitadragan)](https://x.com/rakitadragan)
@@ -44,7 +44,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker introduces themselves as the creator of RAM **Rust** **EVM** and talks about their background in building their own **EVM** library.
 
-![](01-Transaction-and-Gas.png)
+![](assets/01-Transaction-and-Gas.png)
 
 - The speaker wrote RAM **Rust** **EVM** a few years ago because existing **EVM** libraries were difficult to use.
 - They didn't expect it to be used so much within a year or two.
@@ -62,7 +62,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker discusses the inputs required by the **EVM**, including transactions, blocks, and configurations.
 
-![](02-Block.png)
+![](assets/02-Block.png)
 
 - The main inputs of the **EVM** are transactions, blocks, and configurations.
 - Transactions contain information such as gas limits and account addresses.
@@ -73,7 +73,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker explains how database interface works in fetching storage and accounts while executing bytecode in the **EVM**.
 
-![](03-Database-interface.png)
+![](assets/03-Database-interface.png)
 
 - Database interface dynamically fetches storage and accounts while executing bytecode in the **EVM**.
 - When executing bytecode from an account, the **EVM** fetches the account's balance, bytecode hash, and code.
@@ -83,7 +83,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker discusses the stack-based machine inside the **EVM** and different types of instructions.
 
-![](04-EVM-Host-and-Interpreter.png)
+![](assets/04-EVM-Host-and-Interpreter.png)
 
 - The **EVM** is a stack-based machine where instructions are executed one by one.
 - There are two main types of instructions: call and create.
@@ -94,7 +94,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** The speaker explains the output of the **EVM**, including changes to accounts, logs, status, and gas usage.
 
-![](05-EVM-Diagram.png)
+![](assets/05-EVM-Diagram.png)
 
 - The output of the **EVM** includes changes made to accounts, logs created during execution, status indicating if it was reverted or not, and gas usage.
 
@@ -127,7 +127,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** This section provides a detailed explanation of how the interpreter works in terms of bytecode analysis and execution stages.
 
-![](06-Interpreter.png)
+![](assets/06-Interpreter.png)
 
 ## Bytecode Analysis
 
@@ -152,7 +152,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 **Section Overview:** This section explains the structure of the interpreter, including its components and their functionalities.
 
-![](07-Interpreter-contains.png)
+![](assets/07-Interpreter-contains.png)
 
 ## Interpreter Components
 
@@ -166,7 +166,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Standard Instructions
 
-![](08-Interpreter-machine-in-code.png)
+![](assets/08-Interpreter-machine-in-code.png)
 
 - Memory Load/Store: Instructions for loading/storing data from/to memory.
 - Program Counter Jump/Jump Destination Store: Instructions related to program counter manipulation and jumping within bytecode instructions.
@@ -174,13 +174,13 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Environment and Logging
 
-![](09-OpCodes.png)
+![](assets/09-OpCodes.png)
 
 - Storage Load/Store Environment: Fetches storage or block information as needed by opcodes.
   - Depends on the context of execution (e.g., fetching block timestamp).
 - Logging Instructions: Used for logging purposes, including address creation and topics extraction.
 
-![](10-CREATE-And-CREATE2.png)
+![](assets/10-CREATE-And-CREATE2.png)
 
 # [16:05](https://youtu.be/Nh19f_2fWLc?t=965) Address Calculation and Multiple Calls
 
@@ -194,7 +194,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Multiple Calls
 
-![](11-Call-OpCodes.png)
+![](assets/11-Call-OpCodes.png)
 
 - Multiple calls can occur within the interpreter.
 - The specific details of how subsequent calls are made depend on the context and requirements of the execution.
@@ -205,7 +205,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Logging Details
 
-![](12-Logs.png)
+![](assets/12-Logs.png)
 
 - Logs contain information such as creator addresses and topics.
 - Creator addresses indicate who created a particular log entry.
@@ -217,7 +217,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 
 ## Gas Price Calculation
 
-![](13-Gas.png)
+![](assets/13-Gas.png)
 
 - The gas price in **EVM**s is determined by multiplying the gas used by the gas price.
 - The gas price can vary depending on factors such as the original gas price and other calculations.
@@ -235,21 +235,21 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 - However, this idea was not widely adopted or implemented due to complexity and usability concerns. [17:41](https://youtu.be/Nh19f_2fWLc?t=1061)
 
 
-[00:19:41](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1181s) ![](14-Traces.png)
+[00:19:41](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1181s) ![](assets/14-Traces.png)
 
-[00:20:08](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1208s) ![](15-Inspector.png)
+[00:20:08](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1208s) ![](assets/15-Inspector.png)
 
-[00:20:56](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1256s) ![](17-Host.png)
+[00:20:56](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1256s) ![](assets/17-Host.png)
 
-![](18-Host-contains.png)
+![](assets/18-Host-contains.png)
 
-[00:22:30](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1350s) ![](19-Subroutine-State-and-reverts.png)
+[00:22:30](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1350s) ![](assets/19-Subroutine-State-and-reverts.png)
 
-[00:23:30](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1410s) ![](20-Host-Trait-1.png)
+[00:23:30](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1410s) ![](assets/20-Host-Trait-1.png)
 
-[00:24:20](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1460s) ![](21-Precompile.png)
+[00:24:20](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1460s) ![](assets/21-Precompile.png)
 
-[00:25:00](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1500s) ![](22-Hard-Forks.png)
+[00:25:00](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1500s) ![](assets/22-Hard-Forks.png)
 
 
 # [26:04](https://youtu.be/Nh19f_2fWLc?t=1564)
@@ -295,7 +295,7 @@ In this video, **Dragan Rakita** will take a technical walkthrough of the **Ethe
 - Gas calculation is done using u64 because the limit is around 30 million, which fits well within a u64. [27:40](https://youtu.be/Nh19f_2fWLc?t=1660)
 - Memory calculation is also done using u64. [27:40](https://youtu.be/Nh19f_2fWLc?t=1660)
 
-[00:27:54](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1674s) ![](23-Optimizations.png)
+[00:27:54](https://www.youtube.com/watch?v=Nh19f_2fWLc&t=1674s) ![](assets/23-Optimizations.png)
 
 
 # [28:23](https://youtu.be/Nh19f_2fWLc?t=1703)
